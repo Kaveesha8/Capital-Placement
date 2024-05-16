@@ -6,7 +6,7 @@ namespace Application.Dtos.QuestionTypeDtos
     {
         public YesNoQuestionType()
         {
-            Type = QuestionTypeEnum.YesNo;
+            Type = QuestionTypes.YesNo;
         }
 
         public bool Answer { get; set; }

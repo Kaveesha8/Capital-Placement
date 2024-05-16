@@ -1,5 +1,11 @@
 
-namespace Capital_Placement
+using Application.Interfaces;
+using Application.Services;
+using Infastructure;
+using Infastructure.Repositories;
+using Submission_Form.MappingProfile;
+
+namespace Submission_Form
 {
     public class Program
     {
@@ -13,6 +19,14 @@ namespace Capital_Placement
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<ProgramDbContext>();
+
+            builder.Services.AddScoped<IProgramService, ProgramService>();
+
+            builder.Services.AddScoped<IProgramRepository, ProgramRepository>();
+            builder.Services.AddAutoMapper(typeof(ProgramMapping));
+
 
             var app = builder.Build();
 

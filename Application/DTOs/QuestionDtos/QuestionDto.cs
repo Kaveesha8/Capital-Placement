@@ -1,5 +1,4 @@
 ﻿using Application.Dtos.QuestionTypeDtos;
-using Application.DTOs;
 
 namespace Application.Dtos.QuestionDtos
 {
@@ -7,6 +6,7 @@ namespace Application.Dtos.QuestionDtos
     {
         public string QuestionId { get; set; }
         public QuestionType QuestionType { get; set; }
+        
 
         public bool IsManadory { get; set; }
 

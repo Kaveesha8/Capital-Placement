@@ -6,7 +6,7 @@ namespace Application.Dtos.QuestionTypeDtos
     {
         public DateQuestionType()
         {
-            Type = QuestionTypeEnum.Date;
+            Type = QuestionTypes.Date;
         }
 
         public DateOnly Answer { get; set; }

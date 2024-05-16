@@ -11,7 +11,7 @@ namespace Application.Dtos.QuestionTypeDtos
     {
         public ParagraphQuestionType()
         {
-            Type = QuestionTypeEnum.Paragraph;
+            Type = QuestionTypes.Paragraph;
         }
 
         public string Answer { get; set; }

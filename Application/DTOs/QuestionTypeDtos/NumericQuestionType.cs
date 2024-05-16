@@ -11,7 +11,7 @@ namespace Application.Dtos.QuestionTypeDtos
     {
         public NumericQuestionType()
         {
-            Type = QuestionTypeEnum.Number;
+            Type = QuestionTypes.Number;
         }
 
         public int Answer { get; set; }

@@ -1,12 +1,14 @@
-﻿using Application.DTOs;
+﻿
+using Common;
+using Domain.Entities;
 
-namespace Application.Dtos.QuestionTypeDtos
+namespace Domain.Entities
 {
-    public class DropDownQuestionType : QuestionType
+    public class DropDownQuestionTypeEntity : QuestionTypeEntity
     {
-        public DropDownQuestionType()
+        public DropDownQuestionTypeEntity()
         {
-            Type = QuestionTypes.DropDown;
+            Type = QuestionType.DropDown;
             _isOtherOptionEnabled = false;
         }
 
